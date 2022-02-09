@@ -1,0 +1,138 @@
+*{
+    list-style: none;
+}
+body{
+    background: #364d64;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.boss{
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    min-height: 90px;
+    align-items: center;
+    text-transform: uppercase;
+}
+.boss h2{
+    font-size: 2.3em;
+}
+.boss ul{
+    display: flex;
+   flex-wrap: wrap;
+
+}
+.boss ul li{
+   margin-left: 20px;
+   font-size: 25px;
+   cursor: pointer;
+}
+.active{
+    color: tomato;
+}
+.center{
+    position: absolute;
+    height: 450px;
+    width: 800px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+   overflow: hidden;
+}
+.images{
+    width: 500%;
+    height: 100%;
+    display: flex;
+}
+.slider{
+    width: 20%;
+    transition: .6s;
+}
+img{
+    width: 850px;
+    height: 100%;
+}
+.boton{
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+a{
+    height: 8px;
+    border: 2px white solid;
+    width: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.ham{
+    position: absolute;
+    right: 100px;
+    top: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+.line{
+    height: 5px;
+    width: 30px;
+    background: white;
+    margin-top: 5px;
+}
+.base{
+  display: block;
+}
+.primera{
+    rotate: 45deg;
+    transition: .3s;
+}
+.segunda{
+    display: none;
+    transition: .3s;
+}
+.tercera{
+    position: absolute;
+    rotate: -45deg;
+    transition: .3s;
+    top: 10%;
+    
+}
+@media screen and (max-width:768px) {
+    body{
+        overflow: hidden;
+    }
+    .ham{
+    display: block;
+    right: 25px;
+    top: 20px;
+    }
+    .base{
+        display: none;
+    }
+    .boss ul{
+        position: absolute;
+        width: 100px;
+        margin-right: 50px;
+        line-height: 50px;
+        margin-top: 700px;
+        justify-content: center;
+
+    }
+    .boss ul li{
+        line-height: 80px;
+        font-size: 35px;
+
+    }
+  
+    h2{
+        position: absolute;
+        left: 10%;
+        cursor: pointer;
+    }
+    .center{
+        display: none;
+    }
+    
+}

@@ -1,0 +1,122 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #364d64;
+    
+}
+.center{
+ position: absolute;
+ left: 50%;
+ top: 50%;
+ height: 450px;
+ width: 800px;
+ transform: translate(-50%,-50%);
+ overflow: hidden;
+
+ 
+}
+.btn1:hover{
+    cursor: pointer;
+}
+.images{
+    height: 100%;
+    width: 500%;
+    display: flex;
+  
+    
+}
+.slider{
+    width: 20%;
+    transition: .6s;
+
+}
+img{
+    height: 100%;
+    width: 100%;
+  
+}
+.boton{
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+a{
+    width: 30px;
+    height: 8px;
+    border: 2px white solid;
+    margin-left: 10px;
+    border-radius: 10px;
+ 
+}
+.uno{
+    background-color: red;
+}
+.fondo{
+    box-shadow: red 0px 0px 50px;
+}
+.color{
+    background: url(https://images.pexels.com/photos/10262654/pexels-photo-10262654.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .6s;
+    width: 50px;
+    height: 30px;
+}
+.color:hover{
+    scale: 200%;
+    margin: 0 50px;
+}
+.color1{
+    background: url(https://images.pexels.com/photos/8697430/pexels-photo-8697430.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    transition: .6s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .6s;
+    width: 50px;
+    height: 30px;
+}
+.color1:hover{
+    scale: 200%;
+    margin: 0 50px;
+}
+.color2{
+    background: url(https://www.istockphoto.com/resources/images/PhotoFTLP/P4-FEB-iStock-1352165307.jpg);
+    transition: .6s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .6s;
+    width: 50px;
+    height: 30px;
+}
+.color2:hover{
+    scale: 200%;
+    margin: 0 50px;
+}
+.color3{
+    background: url(https://burst.shopifycdn.com/photos/two-customized-cars-rolling-through-a-city-street.jpg?height=285&format=pjpg&exif=0&iptc=0);
+    transition: 1s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .6s;
+    width: 50px;
+    height: 30px;
+}
+.color3:hover{
+    scale: 200%;
+    margin: 0 50px;
+}
+.color4{
+    background: url(https://images.pexels.com/photos/5665436/pexels-photo-5665436.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+    transition: 1s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: .6s;
+    width: 50px;
+    height: 30px;
+}
+.color4:hover{
+    scale: 200%;
+    margin: 0 50px;
+}

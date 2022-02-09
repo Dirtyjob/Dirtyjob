@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="slide.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="ham">
+        <div class="line primera"></div>
+        <div class="line segunda"></div>
+        <div class="line tercera"></div>
+    </div>
+    <div class="base">
+        <nav class="boss">
+            <h2>log</h2>
+            <ul>
+                <li class="active">home</li>
+                <li>about</li>
+                <li>products</li>
+                <li>media</li>
+            </ul>
+        </nav>
+        <div class="center">
+            <div class="images">
+                <div class="slider img1"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLrRWXd9X76RikebinqViJqb38wmYY8P_wtFsUciC_GJDuMiZMtht5G8dQn2poqd5abe4&usqp=CAU" alt=""></div>
+                <div class="slider"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCmMYgzzx_cgN4zN-CZ5d7N3OhASijbH-oyadVZxkpadZhjvLS7yjLsdX-b21aDtxMQEI&usqp=CAU" alt=""></div>
+                <div class="slider"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFTLZ6VNtQFJDnqbHoykBmS1K-E6wXfXjoxTRAI3vzkE5v51zBPBeWx3_gs3kDL4KKI7A&usqp=CAU" alt=""></div>
+                <div class="slider"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-43S-O4cDuWWMeaPt9TMZIkH5SpGtulspg14vnWyYwOFrkXI7-0LQs1XNGd667zQTJ3E&usqp=CAU" alt=""></div>
+                <div class="slider"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRE1sRe5eXKOMDlxQcI9ZwOuil0lhqHJQ2GJUKpNQrvxw84se2Z67weaKuYdRlESk7aeqE&usqp=CAU" alt=""></div>
+            </div>
+            <div class="boton">
+                <a href="#" class="btn1"></a>
+                <a href="#" class="btn2"></a>
+                <a href="#" class="btn3"></a>
+                <a href="#" class="btn4"></a>
+                <a href="#" class="btn5"></a>
+            </div>
+        </div>
+    </div>
+   
+    <script>
+        let boton = document.querySelector('.btn1')
+        let boton2 = document.querySelector('.btn2')
+        let boton3 = document.querySelector('.btn3')
+        let boton4 = document.querySelector('.btn4')
+        let boton5 = document.querySelector('.btn5')
+        let foto = document.querySelector('.img1')
+        boton.addEventListener('click', myFunction)
+        function myFunction(){
+            foto.style = 'margin-left:0;'
+        }
+        boton2.addEventListener('click', otra)
+        function otra(){
+            foto.style = 'margin-left:-20%;'
+        }
+        boton3.addEventListener('click', otraDos)
+        function otraDos(){
+            foto.style = 'margin-left:-40%;'
+        }
+        boton4.addEventListener('click', otraTres)
+        function otraTres(){
+            foto.style = 'margin-left:-60%;'
+        }
+        boton5.addEventListener('click', otraCuatro)
+        function otraCuatro(){
+            foto.style = 'margin-left:-80%;'
+        }
+        let ul = document.querySelector('ul')
+        let lista = document.querySelectorAll('li')
+        lista.forEach(Element => {
+            Element.addEventListener('click', function(){
+                ul.querySelector('.active').classList.remove('active')
+                Element.classList.add('active')
+            })
+        })
+        let cuerpo = document.querySelector('.base')
+        let botoncito = document.querySelector('.ham')
+        let primera = document.querySelector('.primera')
+        let segunda = document.querySelector('.segunda')
+        let tercera = document.querySelector('.tercera')
+        botoncito.addEventListener('click', function(){
+           cuerpo.classList.toggle('base')
+           primera.classList.toggle('primera')
+           segunda.classList.toggle('segunda')
+           tercera.classList.toggle('tercera')
+
+        })
+       
+    </script>
+</body>
+</html>
